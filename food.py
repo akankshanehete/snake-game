@@ -12,4 +12,8 @@ class Food(Turtle):
         self.speed("fastest")
         # creating a new object of the food class will make the food show up at a random location
         self.goto(random.randint(-280, 280), random.randint(-280, 280))
+        self.refresh()
+
+    def refresh(self):
+        self.goto(random.randint(-280, 280), random.randint(-280, 280))
 
